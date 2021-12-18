@@ -1,0 +1,20 @@
+<div class="container">
+    <h1>Minister Registration</h1>
+    <form action="/action_page.php" #ministerForm="ngForm" (ngSubmit)="ministerRegister()">
+        
+        <label for="name">Minister Name</label>
+        <input type="text" placeholder="Enter Your name" name="mname" #mn="ngModel" [(ngModel)]=min.ministerName required/>
+        
+        <label for="email">Email Id</label>
+        <input type="text" placeholder="Enter your email address" name="memail" #mn="ngModel" [(ngModel)]=min.ministerEmail required/>
+
+        <label for="bank">Password</label>
+        <input type="text" placeholder="enter a  password" name="mpass" #mn="ngModel" [(ngModel)]=min.ministerPassword required/>
+        
+        <div class="btn-student">
+            <button mat-raised-button class="btn-student2" color="primary" [disabled]=ministerForm.invalid>Register</button>
+            <button mat-raised-button class="btn-student2" color="warn">Reset</button>
+        </div>
+       
+      </form>
+</div>

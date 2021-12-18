@@ -1,0 +1,33 @@
+.card{
+    height: fit-content;
+}
+li{
+    list-style: none;
+}
+ .mat-card-heading{
+    background-color:#D7675C !important;
+    padding:5px !important;
+    color: #fff;
+  } 
+
+   .mat-card{
+    padding:0 !important;
+  }
+  
+  .help-desk-p{
+      padding: 16px;
+  }
+  
+  .update-para{
+      padding: 15px;
+  }
+  .d-block{
+      height: 100%;
+  }
+  .desc-card{
+    height: 100% !important;
+  }
+.desc-para{
+    padding: 16px;
+}
+

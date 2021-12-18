@@ -1,0 +1,24 @@
+.main-navigation{
+    list-style: none;
+    padding: 10px;
+    width: 100%;
+    margin: 0 auto;
+    background: #0a99a4;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 17px;
+    font-weight: 500;
+
+}
+ul li {
+    display: block;
+    position: relative;
+    float: left;
+}
+ul li a {
+    display: block;
+    padding: 0.3em 1.1em;
+    text-decoration: none !important;
+    white-space: nowrap;
+    color: #fff;
+}

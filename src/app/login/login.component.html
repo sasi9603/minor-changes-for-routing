@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <mat-card class="example-card">
+                <div class="card-data">
+                <mat-card-title class="mat-card-heading">Login</mat-card-title>
+                <strong style="margin-left:15px;" >Student</strong>
+                <mat-card-content>
+                    <form class="form" #studentloginForm="ngForm" (ngSubmit)="studentlogin1()">
+                        <div class="form-group">
+                            <div>
+                            <mat-form-field appearance="standard"class="example-full-width">
+                                <mat-label>Enter Email</mat-label>
+                                <input type="text"name="emailId" matInput required #en="ngModel" [(ngModel)]="studentlog.emailId"/>   
+                            </mat-form-field>    
+                        </div>  
+                        <div>        
+                            <mat-form-field appearance="standard"class="example-full-width">
+                                <mat-label>Enter Password</mat-label>
+                                <input type="password" name="Password" matInput required #pn="ngModel" [(ngModel)]="studentlog.password"/>
+                            </mat-form-field> 
+                            <a href="">forgot password</a>
+                        </div>             
+                        </div> 
+                        <mat-card-actions>
+                            <div class="btn-login">
+                                <button mat-raised-button color="primary"routerLink="/studentdashboard">Login</button>
+                                <button mat-raised-button color="warn">Reset</button>
+                            </div>
+                        </mat-card-actions>
+                    </form>
+                </mat-card-content>
+               
+            </div>
+        </mat-card>   
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>
+
+
+
+
+

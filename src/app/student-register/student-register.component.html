@@ -1,0 +1,33 @@
+<div class="container">
+  <h1>Fresh Student Registration</h1>
+  <form action="/action_page.php" #studentForm="ngForm" (ngSubmit)="studentRegister()">
+      <label for="State of Domicile">State of Domicile:</label>
+      <input type="text" placeholder="enter your state of domicile" name="state" #sd="ngModel" [(ngModel)]=register.stateofDomicile/>
+        
+      <label for="name">Name(As In Marks Sheet) </label>
+      <input type="text" id="name" name="name" placeholder="Your name.." name="student" #sn="ngModel" [(ngModel)]=register.studentName/>
+       
+       <label for="District">Gender:</label>
+       <select id="gender" name="gender" #ge="ngModel" name="gender" [(ngModel)]=register.gender>
+          <option value="select">select</option>
+         <option value="Male">Male</option>
+         <option value="Female">Female</option>
+       </select>
+      <label for="number">Mobile Number</label>
+      <input type="text" placeholder="enter a mobile number" name="number" #mn="ngModel" [(ngModel)]=register.mobileNumber/>
+      <label for="aadhar">Aadhar Number</label>
+      <input type="text" placeholder="enter aadhar number" name="aadhar" #an="ngModel" [(ngModel)]=register.aadharNumber/>
+      <label for="email">EMAIL Id</label>
+      <input type="text" placeholder="Enter a email address" name="email" #ei="ngModel" [(ngModel)]=register.emailId/>
+      
+     
+      <label for="bank">Password</label>
+      <input type="text" placeholder="enter a  password" #pd="ngModel" name="pass" [(ngModel)]=register.password/>
+      
+      <div class="btn-student">
+          <button mat-raised-button class="btn-student2" color="primary"[disabled]="studentForm.invalid">Register</button>
+          <button mat-raised-button class="btn-student2" color="warn" type="reset">Reset</button>
+      </div>
+     
+    </form>
+</div>

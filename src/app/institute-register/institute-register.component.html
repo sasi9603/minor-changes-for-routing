@@ -1,0 +1,28 @@
+<div class="container">
+    <h1>Institute Registration</h1>
+    <form action="" #instituteForm="ngForm" (ngSubmit)="instituteRegister()">
+        <h3>BASIC DETAILS <span style="color: red;">*</span></h3>
+        
+          <label for="fname">Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name.." name="iname" #in="ngModel" [(ngModel)]=institute.instituteName/>
+          
+           
+            <label for="institute code">Reg No</label>
+            <input type="text" placeholder="enter a Registration number" name="reg" #rg="ngModel" [(ngModel)]=institute.regNo/>
+            
+            
+            <label for="institute email">email</label>
+            <input type="text" placeholder="enter email" name="iemail" #em="ngModel" [(ngModel)]=institute.instituteEmail/><br>
+            
+           
+            
+               
+            <label for="bank">Password</label>
+            <input type="text" placeholder="enter a  password" name="ipass" #ip="ngModel" [(ngModel)]=institute.institutePassword/>
+            
+           
+            <button mat-raised-button  class="btn-student2" color="primary"[disabled]="instituteForm.invalid">Submit</button>
+   
+             <button mat-raised-button  class="btn-student2" color="warn">Reset</button>
+    </form>
+</div>
